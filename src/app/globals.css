@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-950 text-white/90 font-body antialiased;
+  background-image:
+    radial-gradient(140% 90% at 50% -10%, rgba(212, 175, 55, 0.08) 0%, rgba(7, 7, 8, 0) 50%),
+    linear-gradient(180deg, #070708 0%, #0b0b0e 100%);
+  background-attachment: fixed;
+}
+
+/* Keep focus visible for keyboard users (accessibility floor) */
+:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #fff;
+}
+
+/* Thin gold-tinted scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0e;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8c6c1e, #d4af37);
+  border-radius: 999px;
+  border: 2px solid #0b0b0e;
+}
+
+@layer components {
+  /* Gold metallic gradient text */
+  .text-gold-grad {
+    @apply bg-gold-grad bg-clip-text text-transparent;
+  }
+
+  /* Section eyebrow label */
+  .eyebrow {
+    @apply font-tech text-xs sm:text-sm uppercase tracking-widest2 text-gold-500;
+  }
+
+  /* Tactical HUD bracket frame — the recurring signature element.
+     Wrap any element; gold corner ticks render via ::before/::after + box. */
+  .hud {
+    position: relative;
+  }
+  .hud::before,
+  .hud::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(212, 175, 55, 0.7);
+    pointer-events: none;
+  }
+  .hud::before {
+    top: 10px;
+    left: 10px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .hud::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: 0;
+    border-top: 0;
+  }
+
+  /* Primary gold button */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 font-tech font-semibold uppercase
+           tracking-wider2 text-ink-950 bg-gold-grad px-6 py-3 text-sm
+           transition-all duration-300 hover:shadow-goldsoft hover:brightness-110
+           disabled:opacity-40 disabled:cursor-not-allowed;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, calc(100% - 14px) 100%, 0 100%);
+  }
+
+  /* Outline / ghost button */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 font-tech font-semibold uppercase
+           tracking-wider2 text-gold-400 border border-gold-700/70 px-6 py-3 text-sm
+           transition-all duration-300 hover:border-gold-500 hover:text-gold-300
+           hover:bg-gold-500/5;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, calc(100% - 14px) 100%, 0 100%);
+  }
+
+  /* Hairline gold divider */
+  .rule-gold {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-gold-700/60 to-transparent;
+  }
+
+  /* Card surface */
+  .panel {
+    @apply bg-ink-800/70 border border-white/5 backdrop-blur-sm;
+  }
+}
+
+@layer utilities {
+  .tracking-wider2 {
+    letter-spacing: 0.18em;
+  }
+  .tracking-widest2 {
+    letter-spacing: 0.32em;
+  }
+  /* Subtle moving scanline overlay for cinematic feel */
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.025) 0px,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+    mix-blend-mode: overlay;
+  }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

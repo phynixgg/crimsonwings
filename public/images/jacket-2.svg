@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E0E12"/>
+      <stop offset="1" stop-color="#070708"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#070708" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#D4AF37" stroke-opacity="0.06">
+    <line x1="80" y1="0" x2="80" y2="1000"/>
+<line x1="160" y1="0" x2="160" y2="1000"/>
+<line x1="240" y1="0" x2="240" y2="1000"/>
+<line x1="320" y1="0" x2="320" y2="1000"/>
+<line x1="400" y1="0" x2="400" y2="1000"/>
+<line x1="480" y1="0" x2="480" y2="1000"/>
+<line x1="560" y1="0" x2="560" y2="1000"/>
+<line x1="640" y1="0" x2="640" y2="1000"/>
+<line x1="720" y1="0" x2="720" y2="1000"/>
+<line x1="800" y1="0" x2="800" y2="1000"/>
+<line x1="880" y1="0" x2="880" y2="1000"/>
+<line x1="960" y1="0" x2="960" y2="1000"/>
+    <line x1="0" y1="80" x2="1000" y2="80"/>
+<line x1="0" y1="160" x2="1000" y2="160"/>
+<line x1="0" y1="240" x2="1000" y2="240"/>
+<line x1="0" y1="320" x2="1000" y2="320"/>
+<line x1="0" y1="400" x2="1000" y2="400"/>
+<line x1="0" y1="480" x2="1000" y2="480"/>
+<line x1="0" y1="560" x2="1000" y2="560"/>
+<line x1="0" y1="640" x2="1000" y2="640"/>
+<line x1="0" y1="720" x2="1000" y2="720"/>
+<line x1="0" y1="800" x2="1000" y2="800"/>
+<line x1="0" y1="880" x2="1000" y2="880"/>
+<line x1="0" y1="960" x2="1000" y2="960"/>
+  </g>
+
+  <!-- HUD corner brackets -->
+  <g stroke="#D4AF37" stroke-opacity="0.75" stroke-width="2" fill="none">
+    <path d="M40 70 L40 40 L70 40"/>
+    <path d="M930 40 L960 40 L960 70"/>
+    <path d="M40 930 L40 960 L70 960"/>
+    <path d="M930 960 L960 960 L960 930"/>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="500" y="120" text-anchor="middle" fill="#D4AF37" fill-opacity="0.85"
+    font-family="Rajdhani, Arial, sans-serif" font-size="22" letter-spacing="6">CRIMSON WINGS</text>
+
+  <!-- emblem -->
+  <g transform="translate(500, 460)">
+    <g stroke="#D4AF37" fill="none" stroke-linecap="round">
+    <path d="M0 -74 L15 0 L0 58 L-15 0 Z" stroke-width="6" stroke-linejoin="round"/>
+    <line x1="0" y1="-42" x2="0" y2="28" stroke-width="4"/>
+    <path d="M21 -38 L96 -66" stroke-width="9"/>
+    <path d="M19 -15 L80 -30" stroke-width="8"/>
+    <path d="M17 7 L64 0" stroke-width="7"/>
+    <path d="M-21 -38 L-96 -66" stroke-width="9"/>
+    <path d="M-19 -15 L-80 -30" stroke-width="8"/>
+    <path d="M-17 7 L-64 0" stroke-width="7"/>
+  </g>
+  </g>
+
+  <!-- title -->
+  <text x="500" y="650" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.92"
+    font-family="Orbitron, Arial, sans-serif" font-weight="700" font-size="40">JACKET</text>
+  <text x="500" y="700" text-anchor="middle" fill="#D4AF37" fill-opacity="0.8"
+    font-family="Rajdhani, Arial, sans-serif" font-size="22" letter-spacing="5">DETAIL · VIEW 02</text>
+
+  <!-- replace hint -->
+  <text x="500" y="945" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.28"
+    font-family="Rajdhani, Arial, sans-serif" font-size="16" letter-spacing="2">Replace: /public/images/jacket-2.svg</text>
+</svg>
