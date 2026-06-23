@@ -93,6 +93,13 @@ Real product renders (cropped from the official design sheets) now live in
 | `jacket-front.webp`     | Jacket gallery #1 + homepage card          | square (1:1) |
 | `jacket-back.webp`      | Jacket gallery #2                          | square (1:1) |
 | `jacket-sheet.webp`     | Jacket gallery #3 (full design sheet)      | wide         |
+| `campaign-hero.webp`    | Campaign section — cinematic duo banner    | wide         |
+| `campaign-male.webp`    | Campaign section — male model (T-shirt)    | portrait 4:5 |
+| `campaign-female.webp`  | Campaign section — female model (jacket)   | portrait 4:5 |
+
+The `campaign-*` images are the real model photos. The male/female files are
+transparent cut-outs that sit directly on the dark theme; the hero is the full
+rooftop scene. Swap any of them by replacing the file in `public/images/`.
 
 Two ways to replace:
 1. **Keep filenames:** drop a real image in and keep the same path (e.g. save as
