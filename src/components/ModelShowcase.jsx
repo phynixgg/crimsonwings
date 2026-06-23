@@ -5,14 +5,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionEyebrow from "./SectionEyebrow";
 
-// NOTE FOR LATER:
-// Replace the model placeholder images by dropping real campaign photos into
-// /public/images and updating the `image` paths below
-// (e.g. "/images/model-male.jpg"). Recommended: portrait, ~4:5 ratio,
-// dark background with gold rim lighting to match the brand.
+// These now use the real product front renders. To switch to lifestyle/model
+// campaign photos later, drop them in /public/images and update the `image`
+// paths below (recommended: portrait, ~4:5, dark bg with gold rim light).
 const models = [
   {
-    image: "/images/model-male.svg",
+    image: "/images/tshirt-front.webp",
     tag: "Male / 男性",
     title: "赤羽專屬 電競 T-Shirt",
     titleEn: "Esports T-Shirt",
@@ -20,7 +18,7 @@ const models = [
     href: "/products/tshirt",
   },
   {
-    image: "/images/model-female.svg",
+    image: "/images/jacket-front.webp",
     tag: "Female / 女性",
     title: "赤羽軍團 衝鋒衣",
     titleEn: "Tactical Jacket",

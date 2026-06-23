@@ -32,7 +32,7 @@ npm run start
 
 ```
 akahane-merch/
-├─ public/images/                 # SVG placeholders — replace with real photos
+├─ public/images/                 # real product renders (front / back / design sheet)
 ├─ src/
 │  ├─ app/
 │  │  ├─ layout.jsx               # fonts, navbar, footer, providers
@@ -79,17 +79,20 @@ akahane-merch/
 
 ---
 
-## Replacing the placeholder images
+## Product images
 
-All images live in `public/images/` as on-brand SVG placeholders. Swap them for real
-photos (recommended dark background + gold rim lighting):
+Real product renders (cropped from the official design sheets) now live in
+`public/images/`. If you later get studio or lifestyle photos, swap these out
+(recommended dark background + gold rim lighting):
 
-| Placeholder file        | Used for                          | Suggested ratio |
-|-------------------------|-----------------------------------|-----------------|
-| `tshirt-1/2/3.svg`      | T-shirt gallery                   | square (1:1)    |
-| `jacket-1/2/3.svg`      | Jacket gallery                    | square (1:1)    |
-| `model-male.svg`        | Male model — T-shirt (homepage)   | portrait (4:5)  |
-| `model-female.svg`      | Female model — jacket (homepage)  | portrait (4:5)  |
+| File                    | Used for                                   | Ratio        |
+|-------------------------|--------------------------------------------|--------------|
+| `tshirt-front.webp`     | T-shirt gallery #1 + homepage card         | square (1:1) |
+| `tshirt-back.webp`      | T-shirt gallery #2                         | square (1:1) |
+| `tshirt-sheet.webp`     | T-shirt gallery #3 (full design sheet)     | wide         |
+| `jacket-front.webp`     | Jacket gallery #1 + homepage card          | square (1:1) |
+| `jacket-back.webp`      | Jacket gallery #2                          | square (1:1) |
+| `jacket-sheet.webp`     | Jacket gallery #3 (full design sheet)      | wide         |
 
 Two ways to replace:
 1. **Keep filenames:** drop a real image in and keep the same path (e.g. save as

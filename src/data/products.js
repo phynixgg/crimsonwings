@@ -19,9 +19,9 @@ export const products = {
     currency: "NT$",
     colors: ["Black", "Gold"],
     badge: "BLACK / GOLD",
-    // Gallery images. Replace these SVG placeholders with real photos:
-    // drop your files in /public/images and point to them, e.g. "/images/tshirt-front.jpg"
-    images: ["/images/tshirt-1.svg", "/images/tshirt-2.svg", "/images/tshirt-3.svg"],
+    // Real product renders cropped from the official design sheet.
+    // Order: front, back, full design sheet.
+    images: ["/images/tshirt-front.webp", "/images/tshirt-back.webp", "/images/tshirt-sheet.webp"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
     shortIntro:
       "低調質感 × 競技精神，赤羽軍團日常戰袍。",
@@ -34,10 +34,12 @@ export const products = {
     description:
       "以赤羽軍團象徵 Logo 為核心，融合科技線條與速度感設計，低調質感中展現競技精神。無論日常穿搭、直播活動、同盟聚會，都能展現赤羽軍團的榮耀與信念。",
     material: [
-      // PLACEHOLDER — replace with confirmed specs
-      "Quick-dry breathable knit (placeholder — confirm composition)",
-      "Athletic-fit cut with reinforced shoulder seams",
-      "Machine wash cold, hang dry, do not iron print directly",
+      // From the official design sheet (材質 / MATERIAL)
+      "高彈透氣面料 / High-stretch breathable fabric",
+      "吸濕排汗 / Moisture-wicking",
+      "抗皺耐磨 / Wrinkle- and abrasion-resistant",
+      "親膚舒適 / Soft, skin-friendly feel",
+      "不易起球 / Anti-pilling",
     ],
     designDetails: [
       "Gold Crimson Wings emblem on the chest",
@@ -67,7 +69,7 @@ export const products = {
     currency: "NT$",
     colors: ["Black", "Gold"],
     badge: "BLACK / GOLD",
-    images: ["/images/jacket-1.svg", "/images/jacket-2.svg", "/images/jacket-3.svg"],
+    images: ["/images/jacket-front.webp", "/images/jacket-back.webp", "/images/jacket-sheet.webp"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
     shortIntro:
       "機能風格戰袍，團隊力量與紀律的象徵。",
@@ -80,10 +82,11 @@ export const products = {
     description:
       "將赤羽軍團象徵融入機能風格衝鋒衣，以銳利線條與速度感圖騰，展現團隊的力量、紀律與榮耀。兼具機能性與視覺衝擊，打造專屬赤羽軍團的戰袍。",
     material: [
-      // PLACEHOLDER — replace with confirmed specs
-      "Water-resistant woven shell (placeholder — confirm composition)",
-      "Wind-blocking front zip with storm flap",
-      "Machine wash cold, hang dry, do not tumble dry",
+      // From the official design sheet (材質 / MATERIAL)
+      "防風防水面料 / Windproof, water-resistant shell",
+      "透氣舒適 / Breathable and comfortable",
+      "耐磨抗撕裂 / Abrasion- and tear-resistant",
+      "內裡抓絨保暖 / Fleece-lined for warmth",
     ],
     designDetails: [
       "Large gold Crimson Wings back print",
